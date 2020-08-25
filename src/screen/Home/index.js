@@ -11,7 +11,7 @@ const Home = ({navigation}) => {
     <Container>
       <Logo source={logo} />
       <ButtonPrimary>Cadastrar-me com meu e-mail</ButtonPrimary>
-      <ButtonOutline onPress={() => navigation.navigate('Login')}>
+      <ButtonOutline onPress={() => navigation.navigate('LoginEmail')}>
         Já tenho conta
       </ButtonOutline>
       <Label>

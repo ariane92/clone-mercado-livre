@@ -3,10 +3,10 @@ import {View} from 'react-native';
 
 import {Container, TextInput} from './styles';
 
-const Input = () => {
+const Input = (props) => {
   return (
     <Container>
-      <TextInput />
+      <TextInput {...props} />
     </Container>
   );
 };
