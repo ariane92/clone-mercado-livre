@@ -9,7 +9,10 @@ const AppRoutes = createStackNavigator();
 const routes = () => {
   return (
     <NavigationContainer>
-      <AppRoutes.Navigator>
+      <AppRoutes.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}>
         <AppRoutes.Screen name="Home" component={Home} />
         <AppRoutes.Screen name="Login" component={Login} />
       </AppRoutes.Navigator>

@@ -4,15 +4,14 @@ import {RectButton, TouchableOpacity} from 'react-native-gesture-handler';
 export const Container = styled(RectButton)`
   width: 100%;
   background-color: #3483fa;
-  border-radius: 3px;
-  height: 60px;
+  border-radius: 6px;
+  height: 50px;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  margin-horizontal: 20px;
 `;
 
 export const ButtonText = styled.Text`
-  font-size: 18px;
-  color: #000;
+  font-size: 16px;
+  color: #fff;
 `;
