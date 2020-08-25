@@ -6,12 +6,14 @@ import ButtonPrimary from '../../components/ButtonPrimary';
 import ButtonOutline from '../../components/ButtonOutline';
 import {Container, Logo} from './styles';
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <Container>
       <Logo source={logo} />
-      <ButtonPrimary>Botão 1</ButtonPrimary>
-      <ButtonOutline>Botão2</ButtonOutline>
+      <ButtonPrimary onPress={() => navigation.navigate('Login')}>
+        Entrar
+      </ButtonPrimary>
+      <ButtonOutline>Criar Conta</ButtonOutline>
     </Container>
   );
 };

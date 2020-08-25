@@ -5,7 +5,7 @@ import {Container, ButtonText} from './styles';
 
 const ButtonPrimary = (props) => {
   return (
-    <Container>
+    <Container onPress={props.onPress}>
       <ButtonText>{props.children}</ButtonText>
     </Container>
   );
